@@ -10,10 +10,10 @@ func Test(t *testing.T) {
 	d := NewIntSeqFromSlice(vals)
 	t.Log("d=", d)
 	buf := bytes.NewBuffer([]byte{})
-	d.WriteTo(buf)
+	d.Write(buf)
 	d2 := NewIntSeq()
 	bufr := bytes.NewReader(buf.Bytes())
-	d2.ReadFrom(bufr)
+	d2.Read(bufr)
 	if d.Count() != d2.Count() {
 		t.Error("length mismatch", d, d2)
 	}
