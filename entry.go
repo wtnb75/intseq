@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	maxentry int = 1024
+	maxentry int = 1024 * 1024
 )
 
 // IntSeqEntry is a entry
