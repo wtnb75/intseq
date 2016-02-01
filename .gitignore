@@ -1,2 +1,5 @@
 examples/primes/primes
+examples/primes-atkin/primes-atkin
+examples/primes-eratosthenes/primes-eratosthenes
+examples/primes-sundaram/primes-sundaram
 *.dat
